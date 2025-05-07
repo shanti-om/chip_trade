@@ -1,0 +1,174 @@
+{% extends 'catalog/base.html' %}
+{% block content %}
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-left bg-light">
+    <div class="col-md-5 p-lg-2 mx-auto my-5">
+        <h1 class="display-5 fw-normal">Оптовые поставки <span class="text-primary">чипов</span> </br> и <span
+                class="text-primary">микро</span>электроники из Китая.</h1>
+        <p class="lead fw-normal">Надежные поставщики, быстрая доставка по России.</p>
+        <a class="btn btn-outline-primary" href="#">Отправить запрос >></a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+
+<div class="container-fluid py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-5">Категории продукции</h2>
+
+        <div class="row g-4">
+            <!-- Центральные процессоры -->
+            <div class="col-6 col-md-4 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="text-center p-3 h-100 border rounded-3 hover-shadow">
+                        <div class="bg-primary bg-opacity-10 rounded-3 p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0d6efd"
+                                 class="bi bi-cpu" viewBox="0 0 16 16">
+                                <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                            </svg>
+                        </div>
+                        <h5 class="fs-6 fw-bold text-dark">Центральные процессоры</h5>
+                        <p class="small text-muted mb-0">CPU и системы на кристалле</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Графические процессоры -->
+            <div class="col-6 col-md-4 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="text-center p-3 h-100 border rounded-3 hover-shadow">
+                        <div class="bg-primary bg-opacity-10 rounded-3 p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0d6efd"
+                                 class="bi bi-gpu-card" viewBox="0 0 16 16">
+                                <path d="M4 8a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm7.5-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z"/>
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .5.5V4h13.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5H2v2.5a.5.5 0 0 1-1 0V2H.5a.5.5 0 0 1-.5-.5Zm5.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM9 8a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0Z"/>
+                                <path d="M3 12.5h3.5v1a.5.5 0 0 1-.5.5H3.5a.5.5 0 0 1-.5-.5v-1Zm4 1v-1h4v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5Z"/>
+                            </svg>
+                        </div>
+                        <h5 class="fs-6 fw-bold text-dark">Графические процессоры</h5>
+                        <p class="small text-muted mb-0">GPU и AI-ускорители</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Оперативная память -->
+            <div class="col-6 col-md-4 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="text-center p-3 h-100 border rounded-3 hover-shadow">
+                        <div class="bg-primary bg-opacity-10 rounded-3 p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0d6efd"
+                                 class="bi bi-memory" viewBox="0 0 16 16">
+                                <path d="M1 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.586a1 1 0 0 0 .707-.293l.353-.353a.5.5 0 0 1 .708 0l.353.353a1 1 0 0 0 .707.293H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H1Zm.5 1h3a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5Zm5 0h3a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5Zm4.5.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-4ZM2 10v2H1v-2h1Zm2 0v2H3v-2h1Zm2 0v2H5v-2h1Zm3 0v2H8v-2h1Zm2 0v2h-1v-2h1Zm2 0v2h-1v-2h1Zm2 0v2h-1v-2h1Z"/>
+                            </svg>
+                        </div>
+                        <h5 class="fs-6 fw-bold text-dark">Оперативная память</h5>
+                        <p class="small text-muted mb-0">DRAM, NAND, NOR Flash</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Микроконтроллеры -->
+            <div class="col-6 col-md-4 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="text-center p-3 h-100 border rounded-3 hover-shadow">
+                        <div class="bg-primary bg-opacity-10 rounded-3 p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0d6efd"
+                                 class="bi bi-motherboard" viewBox="0 0 16 16">
+                                <path d="M11.5 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5Zm2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5Zm-10 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6Zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6ZM5 3a1 1 0 0 0-1 1h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0V3Zm0 1h3v3H5V4Zm6.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2Z"/>
+                                <path d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2H1Zm1 11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v11Z"/>
+                            </svg>
+                        </div>
+                        <h5 class="fs-6 fw-bold text-dark">Микроконтроллеры</h5>
+                        <p class="small text-muted mb-0">MCU и встраиваемые системы</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Аналоговые чипы -->
+            <div class="col-6 col-md-4 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="text-center p-3 h-100 border rounded-3 hover-shadow">
+                        <div class="bg-primary bg-opacity-10 rounded-3 p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0d6efd"
+                                 class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                                <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z"/>
+                            </svg>
+                        </div>
+                        <h5 class="fs-6 fw-bold text-dark">Аналоговые чипы</h5>
+                        <p class="small text-muted mb-0">Силовые компоненты</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Сетевые чипы -->
+            <div class="col-6 col-md-4 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="text-center p-3 h-100 border rounded-3 hover-shadow">
+                        <div class="bg-primary bg-opacity-10 rounded-3 p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0d6efd"
+                                 class="bi bi-wifi" viewBox="0 0 16 16">
+                                <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+                                <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                            </svg>
+                        </div>
+                        <h5 class="fs-6 fw-bold text-dark">Сетевые чипы</h5>
+                        <p class="small text-muted mb-0">Ethernet, Wi-Fi, 5G</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Сенсоры -->
+            <div class="col-6 col-md-4 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="text-center p-3 h-100 border rounded-3 hover-shadow">
+                        <div class="bg-primary bg-opacity-10 rounded-3 p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0d6efd"
+                                 class="bi bi-sensor" viewBox="0 0 16 16">
+                                <path d="M4 4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V4Zm1-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H5Z"/>
+                                <path d="M9 5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 8 5h1ZM5.5 9a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V9Zm1 1H6V9h.5v1Zm2.5-.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm1 1h-.5v-1h.5v1Z"/>
+                                <path d="M3 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm1 1H4v-1h.5v1Z"/>
+                                <path d="M3 11.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm1 1H4v-1h.5v1Z"/>
+                                <path d="M8 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm1 1h-.5v-1h.5v1Z"/>
+                                <path d="M8 11.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm1 1h-.5v-1h.5v1Z"/>
+                                <path d="M11 5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 10 5h1Zm-1 1v1h1V6h-1Z"/>
+                            </svg>
+                        </div>
+                        <h5 class="fs-6 fw-bold text-dark">Сенсоры</h5>
+                        <p class="small text-muted mb-0">Интерфейсные чипы</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- no chip -->
+            <div class="col-6 col-md-4 col-lg-4">
+                <a href="#" class="text-decoration-none">
+                    <div class="text-center p-3 h-100 rounded-3" style="background-color: #0d6efd; color: white;">
+                        <div class="p-3 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                 class="bi bi-search-heart" viewBox="0 0 16 16">
+                                <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </div>
+                        <h5 class="fs-6 fw-bold">Не нашли нужный чип?</h5>
+                        <p class="small mb-0">Отправьте запрос - это бесплатно</p>
+                        <p class="small mb-0">Найдем и доставим любые чипы из Китая.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .hover-shadow {
+      transition: all 0.3s ease;
+    }
+    .hover-shadow:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+</style>
+{% endblock %}

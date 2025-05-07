@@ -1,0 +1,55 @@
+<!--    <div class="b-example-divider"></div>-->
+{% load static %}
+<header>
+
+    <nav class="py-2 bg-light border-bottom" aria-label="navbar-top">
+
+        <div class="container d-flex flex-wrap">
+            {% include 'global/menu.html' %}
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Вход</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Регистрация</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="navbar-logo">
+        <div class="container">
+            <a href="#" class="text-decoration-none">
+                <img
+                        src="{% static 'catalog/img/chip_trade_logo_transp.png' %}"
+                        alt="Chip Trade логотип"
+                        class="img-fluid"
+                        style="max-width: 150px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-logo"
+                    aria-controls="navbar-logo" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-logo">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Каталог</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+                           aria-expanded="false">Производители</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                            <li><a class="dropdown-item" href="#">STM</a></li>
+                            <li><a class="dropdown-item" href="#">Samsung</a></li>
+                            <li><a class="dropdown-item" href="#">TSMC</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form>
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+
